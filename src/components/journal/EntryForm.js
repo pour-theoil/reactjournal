@@ -9,7 +9,7 @@ export const EntryForm = () => {
         date: "",
         description: "",
         technologyTag: "",
-        mood: 0,
+        moodId: 0,
         userId: 1
     })
 
@@ -64,12 +64,12 @@ export const EntryForm = () => {
             </fieldset>
             <fieldset>
 				<div className="form-group">
-					<label htmlFor="mood">How are you feeling: </label>
+					<label htmlFor="moodId">How are you feeling: </label>
 					<select value={entry.moodId} name="moodId" id="moodId" onChange={handleInputChange} className="form-control" >
 						<option value="0">Select a mood</option>
-						{mood.map(l => (
-							<option key={l.id} value={l.id}>
-								{l.mood}
+						{mood.map(moo => (
+							<option key={moo.id} value={moo.id}>
+								{moo.mood}
 							</option>
 						))}
 					</select>
