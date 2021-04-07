@@ -2,6 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { AboutMe } from "./AboutMe"
 import { EntryList } from "./journal/JournalList"
+import { EntryForm } from "./journal/EntryForm"
 
 export const Application = () => {
     return (
@@ -11,10 +12,13 @@ export const Application = () => {
                 <AboutMe />
             </Route>
 
-            <Route path="/journal">
+            <Route exact path="/journal">
                 <EntryList />
             </Route>
             
+            <Route exact path="/journal/create">
+                <EntryForm />
+            </Route>
         </>
     )
 }
