@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.moodbar {
+  padding: 1em;
+  float: right;
+  color: white;
+  vertical-align:baseline;
+}
+
+#logOutUser {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em ;
+  text-decoration: none;
+}
+
+.navbar_link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em ;
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+.navbar_link:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #616161;
+}
