@@ -9,7 +9,6 @@ export const getJournalEntries = () => {
     .then(response => response.json())
     .then(parsedResponse => {
         orderedResponse = parsedResponse.reverse();
-        console.log(orderedResponse);
         return orderedResponse;
     })
 }
