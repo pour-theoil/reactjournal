@@ -4,10 +4,11 @@ const apiUrl = "https://firstjsonserver.herokuapp.com"
 
 let orderedResponse = [];
 export const getJournalEntries = () => {
-    return fetch(`${apiUrl}/entries?_expand=user`)
+    return fetch(`${apiUrl}/entries?_expand=user&_expand=mood`)
     .then(response => response.json())
     .then(parsedResponse => {
         orderedResponse = parsedResponse.reverse();
+        console.log(orderedResponse)
         return orderedResponse;
     })
 }

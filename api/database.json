@@ -1,0 +1,65 @@
+{
+    "entries": [
+      {
+        "title": "Week one, getting our feet wet",
+        "date": "2021-02-19",
+        "description": "After just a single week at NSS we are starting to create some very 'interesting' code. The main focus is on flex box, which is quite difficult until you start to really play with it. Additionally, we are learning how to manuipulate <a href='https://github.com/pour-theoil/Coffee-House-Nash'>.css files</a> to bring the site to life.",
+        "technologyTag": " .css",
+        "moodId": 2,
+        "id": 2,
+        "userId": 1
+      },
+      {
+        "title": "Teamwork",
+        "technologyTag": " .css, .html, git, github",
+        "description": "After diving deep into .css, we were thrown into our very first <a href='https://github.com/nss-day-cohort-47/hello-world-vigilant-venutians'>team project</a>. The goal was to master git and github, implement flex box, and of course work as a team. The dynamics were not always easy, but we were able to come together to create a working html website with some interesting responsponsive characteristics!",
+        "moodId": 2,
+        "date": "2021-02-28",
+        "id": 3,
+        "userId": 1
+      },
+      {
+        "title": "CRUD and Hosting",
+        "technologyTag": ".github .js .json",
+        "description": "We are one step closer to making it all work! For this site I have implemented full CRUD functionality. Additionally, reading through all of the GitHub pages documentation, it was pretty cool to finally get this project to work. Next thing is creating some log in credentials to protect others from posting...",
+        "moodId": 2,
+        "date": "2021-03-23",
+        "id": 4,
+        "userId": 1
+      },
+      {
+        "title": "My first react post",
+        "date": "",
+        "description": "I have create, read, and delete working. Now just to set up the update... ",
+        "technologyTag": "react .js .css",
+        "userId": 1,
+        "moodId": 2,
+        "id": 5
+      }
+    ],
+    "users": [
+      {
+        "name": "Logan Demmy",
+        "email": "frank.demmy@gmail.com",
+        "admin": true,
+        "id": 1
+      }
+      
+    ],
+    "userLikes": [],
+    "messages": [],
+    "moods":[
+      {
+        "id": 1,
+        "mood": "Creative"
+      },
+      {
+        "id": 2,
+        "mood": "Marvelous"
+      },
+      {
+        "id": 3,
+        "mood": "Weepy"
+      }
+    ]
+  }
