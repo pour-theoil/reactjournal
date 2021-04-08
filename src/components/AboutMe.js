@@ -1,4 +1,5 @@
 import React from "react";
+import loganpic from './Logan.jpg'
 
 export const AboutMe = () => (
     <>
@@ -7,9 +8,11 @@ export const AboutMe = () => (
                 <h2>Future Web Dev</h2>
                 <p>I am currently enrolled in a C# focused web development bootcamp hosted by Nashville Software School</p>
             </section>
-            {/* <picture className="photo">
-                <img className="headshot" src="/images/Logan .jpg" alt="Headshot of Logan"> </img>
-            </picture> */}
+            <section className="personal">
+            <picture>
+                <img className="photo" src={loganpic} alt="Headshot of Logan"/>
+            </picture>
+            </section>
         </div>
     </>
 )
