@@ -1,6 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+body {
+    background-color: #f5fdc6;
+    margin: 0;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+
 h1{
-    margin-top: 0;
-    padding: 25px 0;
+    margin: 0;
+    padding: 2em 0;
     text-align: center;
     background-color: #fe5d26;
 }
+
+.personal {
+    background-color: #2a9d8f;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 3em;
+    border-radius: 5px;
+}
+
+.journal-card {
+    background-color: #2a9d8f;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 3em;
+    border-radius: 5px;
+}
+
+.personal h2 {
+    text-align: center;
+}
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #fe5d26;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: auto;
+ }
