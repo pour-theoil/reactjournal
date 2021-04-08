@@ -8,7 +8,7 @@ export const Application = () => {
     return (
         <>
             
-            <Route exact path="/">
+            <Route exact path="/reactjournal/">
                 <AboutMe />
             </Route>
 
