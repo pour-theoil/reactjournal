@@ -8,6 +8,9 @@ export const EntryCard =({entry, deletePost}) => {
         <p className="journal-date">{entry.date}   {entry.mood.mood}</p>
         <p className="journal-entry">{entry.description}</p>
         <p className="journal-tags">Tags:{entry.technologyTag}</p>
+        <Link to={`/journal/${entry.id}/edit`}>
+            <button>Edit</button>
+        </Link>
         <button type="button" onClick={() => deletePost(entry.id)}>Delete
         </button>
     </article>

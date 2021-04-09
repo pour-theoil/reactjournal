@@ -1,6 +1,6 @@
 //Comment out depending on local or hosted testing
-// const apiUrl = "http://localhost:8088"
-const apiUrl = "https://firstjsonserver.herokuapp.com"
+const apiUrl = "http://localhost:8088"
+// const apiUrl = "https://firstjsonserver.herokuapp.com"
 
 let orderedResponse = [];
 export const getJournalEntries = () => {
@@ -44,7 +44,7 @@ export const getSingleEntry = (postId) => {
 }
 
 export const updateEntry = (postObj) => {
-    return fetch(`${apiUrl}/${postObj.id}`, {
+    return fetch(`${apiUrl}/entries/${postObj.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
