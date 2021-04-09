@@ -26,18 +26,36 @@
       "technologyTag": ".github .js .json",
       "moodId": 2,
       "userId": 1
+    },
+    {
+      "title": "Getting Ready for Login",
+      "date": "",
+      "description": "This is a test",
+      "technologyTag": "react .js .css",
+      "moodId": 2,
+      "userId": 1,
+      "id": 5
     }
   ],
   "users": [
     {
-      "name": "Logan Demmy",
+      "firstName": "Logan",
+      "lastName": "Demmy",
       "email": "frank.demmy@gmail.com",
       "admin": true,
       "id": 1
     }
   ],
   "userLikes": [],
-  "messages": [],
+  "messages": [
+    {
+      "title": "First Message",
+      "date": "10-27-1988",
+      "message": "Keep up the good work",
+      "userId": "1",
+      "id": 0
+    }
+  ],
   "moods": [
     {
       "id": 1,

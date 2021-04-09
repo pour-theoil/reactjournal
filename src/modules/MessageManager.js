@@ -1,11 +1,11 @@
 //Comment out depending on local or hosted testing
-//const apiUrl = "http://localhost:8088"
-const apiUrl = "https://firstjsonserver.herokuapp.com"
+const apiUrl = "http://localhost:8088"
+// const apiUrl = "https://firstjsonserver.herokuapp.com"
 
 let orderedResponse = [];
-export const getJournalEntries = () => {
+export const getMessages = () => {
 
-    return fetch(`${apiUrl}/entries?_expand=user`)
+    return fetch(`${apiUrl}/messages?_expand=user`)
     .then(response => response.json())
     .then(parsedResponse => {
         orderedResponse = parsedResponse.reverse();
@@ -14,8 +14,8 @@ export const getJournalEntries = () => {
     })
 }
 
-export const createPost = postObj => {
-    return fetch(`${apiUrl}/entries`, {
+export const createMessage = postObj => {
+    return fetch(`${apiUrl}/messages`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -24,27 +24,27 @@ export const createPost = postObj => {
         
     })
         .then(response => response.json())
-        .then(getjournalentry())
+        .then(getMessages())
         
 }
 
-export const deletePost = (postId) => {
-    return fetch(`${apiUrl}/entries/${postId}`, {
+export const deleteMessage = (postId) => {
+    return fetch(`${apiUrl}/messages/${postId}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
         }
     })
         .then(response => response.json())
-        .then(getjournalentry)
+        .then(getMessages)
 }
 
-export const getSingleEntry = (postId) => {
-    return fetch(`${apiUrl}/entries/${postId}`)
+export const getSingleMessage = (postId) => {
+    return fetch(`${apiUrl}/messages/${postId}`)
         .then(response => response.json())
 }
 
-export const updateEntry = (postObj) => {
+export const updateMessage = (postObj) => {
     return fetch(`${apiUrl}/${postObj.id}`, {
         method: "PUT",
         headers: {
@@ -53,5 +53,5 @@ export const updateEntry = (postObj) => {
         body: JSON.stringify(postObj)
     })
         .then(response => response.json())
-        .then(getjournalentry)
+        .then(getMessages)
 }

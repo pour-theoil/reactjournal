@@ -1,8 +1,15 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import "./NavBar.css"
 
-export const NavBar = () => {
+
+export const NavBar = ({clearUser, isAuthenticated}) => {
+    const history = useHistory()
+
+    const handleLogout = () => {
+        clearUser();
+        history.push('/');
+    }
     return (
         <ul className="navbar">
             <li className="navbar__item">
@@ -14,6 +21,13 @@ export const NavBar = () => {
             <li className="navbar__item">
                 <Link className="navbar_link" to="/messages">Messages</Link>
             </li>
+            {isAuthenticated
+                ? <li className="navbar__item">
+                    <span className="navbar_link" onClick={handleLogout}> Logout </span>
+                </li>
+                : <li className="navbar__item">
+                    <Link className="navbar_link" to="/login">Login</Link>
+                </li>}
         </ul>
     )
 }
