@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/reactjournal/static/css/main.3ce095a5.chunk.css",
-    "main.js": "/reactjournal/static/js/main.0fd8014b.chunk.js",
-    "main.js.map": "/reactjournal/static/js/main.0fd8014b.chunk.js.map",
+    "main.css": "/reactjournal/static/css/main.5d60aade.chunk.css",
+    "main.js": "/reactjournal/static/js/main.f0e14a21.chunk.js",
+    "main.js.map": "/reactjournal/static/js/main.f0e14a21.chunk.js.map",
     "runtime-main.js": "/reactjournal/static/js/runtime-main.e87bed83.js",
     "runtime-main.js.map": "/reactjournal/static/js/runtime-main.e87bed83.js.map",
-    "static/js/2.cd28913f.chunk.js": "/reactjournal/static/js/2.cd28913f.chunk.js",
-    "static/js/2.cd28913f.chunk.js.map": "/reactjournal/static/js/2.cd28913f.chunk.js.map",
+    "static/js/2.cae6ae85.chunk.js": "/reactjournal/static/js/2.cae6ae85.chunk.js",
+    "static/js/2.cae6ae85.chunk.js.map": "/reactjournal/static/js/2.cae6ae85.chunk.js.map",
     "index.html": "/reactjournal/index.html",
-    "static/css/main.3ce095a5.chunk.css.map": "/reactjournal/static/css/main.3ce095a5.chunk.css.map",
-    "static/js/2.cd28913f.chunk.js.LICENSE.txt": "/reactjournal/static/js/2.cd28913f.chunk.js.LICENSE.txt",
+    "static/css/main.5d60aade.chunk.css.map": "/reactjournal/static/css/main.5d60aade.chunk.css.map",
+    "static/js/2.cae6ae85.chunk.js.LICENSE.txt": "/reactjournal/static/js/2.cae6ae85.chunk.js.LICENSE.txt",
     "static/media/Logan.fc54d648.jpg": "/reactjournal/static/media/Logan.fc54d648.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e87bed83.js",
-    "static/js/2.cd28913f.chunk.js",
-    "static/css/main.3ce095a5.chunk.css",
-    "static/js/main.0fd8014b.chunk.js"
+    "static/js/2.cae6ae85.chunk.js",
+    "static/css/main.5d60aade.chunk.css",
+    "static/js/main.f0e14a21.chunk.js"
   ]
 }
