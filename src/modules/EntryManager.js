@@ -44,7 +44,7 @@ export const getSingleEntry = (postId) => {
 }
 
 export const updateEntry = (postObj) => {
-    return fetch(`${apiUrl}/${postObj.id}`, {
+    return fetch(`${apiUrl}/entries/${postObj.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
